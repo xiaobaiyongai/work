@@ -18,6 +18,9 @@ public class UserService {
 	}
 
 	public int insert(User user){
+		
+		if(user!=null||user.length){
 		return userMapper.insert(user);
+		}
 	}
 }
